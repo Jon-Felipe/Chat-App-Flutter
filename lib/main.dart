@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// screen
+import 'package:chat_app/screens/auth.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Scaffold(body: Text("Home Screen")),
+      home: AuthScreen(),
     );
   }
 }
